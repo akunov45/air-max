@@ -1,7 +1,14 @@
+import Header from "./components/Header/Header"
+
+import HomePage from "./pages/HomePage"
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Header/>
+      <HomePage/>
+
+    </div>
   )
 }
 

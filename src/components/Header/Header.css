@@ -1,0 +1,8 @@
+.span{
+@apply bg-[#FFA52F] h-[32px] w-[32px] rounded-full
+        flex justify-center items-center
+}
+.header{
+@apply flex justify-between items-center py-[32px] bg-[#fafafa] 
+rounded-[24px] px-[32px]
+}
