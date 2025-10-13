@@ -1,9 +1,14 @@
+import Hero from "../Hero/Hero"
 
-import React from 'react'
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <div className="app-container pt-[24px]">
+      <h1 className='text-[223px] uppercase font-[700]'>
+        Do it
+        <span className="text [rgba(74, 105, 226, 1)]">right</span></h1>
+        <Hero/>
+    </div>
   )
 }
 

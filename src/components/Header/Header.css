@@ -1,0 +1,15 @@
+.span {
+    @apply bg-[#FFA52F] h-[32px] w-[32px] rounded-full flex items-center justify-center;
+}
+
+.header {
+    @apply flex justify-between items-center py-[32px] bg-[#fafafa] rounded-[24px] px-[32px];
+}
+
+.btns{
+    @apply flex items-center gap-[42px];
+}
+
+.menu {
+    @apply flex gap-[40px];
+}
