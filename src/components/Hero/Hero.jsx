@@ -11,8 +11,8 @@ const Hero = () => {
     >
       <div className="absolute top-[90px] items-end">
         <p className="bg-[#232321] bg-opacity-60 px-2 py-3 rounded-md text-sm font-semibold tracking-widest uppercase text-center"
-           style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}>
-          Nike product of the year 
+          style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}>
+          Nike product of the year
         </p>
       </div>
 
@@ -30,12 +30,12 @@ const Hero = () => {
         <img
           src={Shoe1}
           alt="shoe1"
-          className="w-32 h-24 rounded-xl border-2 border-white object-cover"
+          className="w-[160px] h-[160px] rounded-xl  border-white object-cover"
         />
         <img
           src={Shoe2}
           alt="shoe2"
-          className="w-32 h-24 rounded-xl border-2 border-white object-cover"
+          className="w-[160px] h-[160px] rounded-xl border-white"
         />
       </div>
     </div>
