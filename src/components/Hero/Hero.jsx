@@ -1,46 +1,41 @@
 import React from "react";
 import HeroImg from "/hero.png";
-import Buts from "/buts.png";
-import Buts1 from "/buts1.png";
-import "./Hero.css";
+import Shoe1 from "/shoe1.png";
+import Shoe2 from "/shoe2.png";
+
 const Hero = () => {
   return (
     <div
-      style={{ backgroundImage: `url(${HeroImg})`, height: "750px" }}
-      className="relative bg-cover bg-no-repeat rounded-3xl text-white flex items-end px-16 pb-16"
+      className="relative h-[750px] bg-cover bg-center text-white"
+      style={{ backgroundImage: `url(${HeroImg})` }}
     >
-      <div
-        className="umar absolute left-[35px]
-       top-[300px] w-[237px] 
-       h-[67px] bg-[#232321] 
-       text-white text-[16px] font-[600]
-        px-5 py-[18px] rotate-[-90deg] origin-left"
-      >
-        Nike product of the year
+      <div className="absolute top-[90px] items-end">
+        <p className="bg-[#232321] bg-opacity-60 px-2 py-3 rounded-md text-sm font-semibold tracking-widest uppercase text-center"
+          style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}>
+          Nike product of the year
+        </p>
       </div>
 
-      <div className="z-10 max-w-lg">
-        <h2 className="text-[74px] font-[600]">NIKE AIR MAX</h2>
-        <p className="text-[24px] font-[600] text-gray-200 mb-8 w-[490px] h-[66px]">
+      <div className="absolute left-16 bottom-10 max-w-xl p-6 rounded-xl">
+        <h2 className="text-5xl font-bold mb-4">NIKE AIR MAX</h2>
+        <p className="text-lg mb-6">
           Nike introducing the new air max for everyone's comfort
         </p>
-        <button className="bg-[#4A69E2] border-[3px] hover:bg-blue-700 text-white px-8
-         py-3 rounded-xl font-semibold shadow-md
-          hover:shadow-blue-500/50 transition duration-300">
+        <button className="bg-[#4A69E2] text-white px-6 py-3 rounded-md font-semibold">
           SHOP NOW
         </button>
       </div>
 
-      <div className="absolute right-12 bottom-12 flex flex-col gap-4">
+      <div className="absolute bottom-8 right-8 flex flex-col gap-4">
         <img
-          src={Buts}
-          alt="Nike buts 1"
-          className="w-[160px] h-[160px] rounded-2xl object-cover"
+          src={Shoe1}
+          alt="shoe1"
+          className="w-[160px] h-[160px] rounded-xl  border-white object-cover"
         />
         <img
-          src={Buts1}
-          alt="Nike buts 2"
-          className="w-[160px] h-[160px] rounded-2xl object-cover"
+          src={Shoe2}
+          alt="shoe2"
+          className="w-[160px] h-[160px] rounded-xl border-white"
         />
       </div>
     </div>
