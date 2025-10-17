@@ -1,16 +1,15 @@
-/* Стили для контейнера */
+
         .app-container {
           max-width: 1320px;
           margin: 0 auto;
         }
 
-        /* Общий контейнер секции */
+
         .categories-section {
           padding: 50px 0;
           color: white;
         }
 
-        /* Заголовок и навигация */
         .categories-header {
           display: flex;
           justify-content: space-between;
@@ -68,7 +67,6 @@
           overflow: visible;
         }
 
-        /* Стили карточки */
         .category-card {
           display: flex;
           flex-direction: column;
