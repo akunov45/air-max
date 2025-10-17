@@ -1,6 +1,6 @@
 
-import React from 'react'
 import Hero from '../components/Hero/Hero'
+import ProductList from '../components/ProductList/ProductList'
 
 const HomePage = () => {
   return (
@@ -10,6 +10,7 @@ const HomePage = () => {
         <span className='text-[#4A69E2]'> right</span>
         </h1>
         <Hero />
+        <ProductList />
     </div>
   )
 }
