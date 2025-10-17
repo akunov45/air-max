@@ -7,10 +7,12 @@ import Button from '../UI/Button'
 const ProductList = () => {
   return (
     <div>
-        <div className='product-title'>
-            <h2>Don’t miss out new drops</h2>
-            <Button>Shop New Drops</Button>
-        </div>
+      <div className='product-title'>
+        <h2>Don’t miss out new drops</h2>
+        <Button>
+          Shop New Drops
+        </Button>
+      </div>
     </div>
   )
 }

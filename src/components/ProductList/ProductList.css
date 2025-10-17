@@ -1,15 +1,16 @@
 
-.product-title{
-    padding-top: 90px;
-    margin-bottom: 32px;
-    @apply flex justify-between items-end;
-    h2{
-        font-size: 74px;
-        font-weight: 600;
-        width: 590px;
-        @apply uppercase;
-    }
-    button{
-        /* @apply bg-[#4A69E2] text-[white] py-[15px] px-[32px] rounded-[8px] font-[500] text-[14px] uppercase;*/
-    }
+
+
+.product-title {
+  padding-top: 90px;
+  margin-bottom: 32px;
+  @apply flex justify-between items-end;
+  h2 {
+    font-size: 74px;
+    font-weight: 600;
+    width: 590px;
+    @apply  uppercase;
+  }
+  button  {
+  }
 }

@@ -1,4 +1,3 @@
-import { Categories } from "./components/Categories/Categories"
 import Header from "./components/Header/Header"
 import HomePage from "./pages/HomePage"
 
@@ -7,7 +6,6 @@ const App = () => {
     <div>
       <Header />
       <HomePage />
-      <Categories />
     </div>
   )
 }
