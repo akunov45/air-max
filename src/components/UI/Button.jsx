@@ -1,6 +1,3 @@
-
-
-
 const Button = (props) => {
   const { children } = props
 
