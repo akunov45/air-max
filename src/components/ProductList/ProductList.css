@@ -2,7 +2,6 @@
 
 
 .product-title {
-<<<<<<< HEAD
   padding-top: 90px;
   margin-bottom: 32px;
   @apply flex justify-between items-end;
@@ -13,19 +12,5 @@
     @apply  uppercase;
   }
   button  {
-    /* @apply bg-[#4A69E2] text-[white] px-[32px] py-[15px] rounded-[8px] uppercase font-[500]; */
   }
-=======
-    margin-bottom: 32px;
-    @apply flex justify-between items-end;
-h2 {
-    font-size: 74px;
-    font-weight: 600;
-    width: 610px;
-    @apply uppercase;
-}
-button {
-/* @apply bg-[#4A69E2] text-[white] px-[32px] py-[15px] rounded-[18px] uppercase; */
-}
->>>>>>> 3fd14e0afa1b427d401f569f2dac137373d14952
 }
