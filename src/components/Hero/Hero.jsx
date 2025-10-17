@@ -24,7 +24,9 @@ const Hero = () => {
         <p className="text-[24px] font-[600] text-gray-200 mb-8 w-[490px] h-[66px]">
           Nike introducing the new air max for everyone's comfort
         </p>
-        <button className="bg-[#4A69E2] border-[3px] hover:bg-blue-700 text-white px-8 py-3 rounded-xl font-semibold shadow-md hover:shadow-blue-500/50 transition duration-300">
+        <button className="bg-[#4A69E2] border-[3px] hover:bg-blue-700 text-white px-8
+         py-3 rounded-xl font-semibold shadow-md
+          hover:shadow-blue-500/50 transition duration-300">
           SHOP NOW
         </button>
       </div>
