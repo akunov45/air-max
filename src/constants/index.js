@@ -1,0 +1,4 @@
+
+export const BASE_URL ="https://vvrbegrzqkhpepspuilj.supabase.co"
+
+export const API_KEY ="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ2cmJlZ3J6cWtocGVwc3B1aWxqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjA2NDg2MTcsImV4cCI6MjA3NjIyNDYxN30.oGa4vU9JjWupU-XPm3lXvss0x1r4NqzX-5O-WnfoW1g"

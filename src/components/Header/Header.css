@@ -1,13 +1,13 @@
 
-
 .span {
-@apply bg-[#ffa52f] h-[32px] w-[32px] rounded-full flex items-center justify-center;
+  @apply bg-[#FFA52F] h-[32px] w-[32px] rounded-full flex items-center justify-center;
 }
-
-
-
 
 .header {
-@apply flex justify-between items-center bg-[white] rounded-[24px] py-[32px] px-[32px];
+  @apply flex justify-between items-center py-[32px] bg-[#fafafa] rounded-[24px] px-[32px];
 }
+
+
+
+
 

@@ -1,19 +1,15 @@
-
-
-
-import React from 'react'
-import "./ProductList.css"  
 import Button from '../UI/Button'
+import './ProductList.css'
 
 const ProductList = () => {
   return (
     <div>
-        <div className="product-title">
+      <div className='product-title'>
         <h2>Don’t miss out new drops</h2>
         <Button>
-            Shop new drops
+          Shop New Drops
         </Button>
-        </div>
+      </div>
     </div>
   )
 }
