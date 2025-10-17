@@ -1,5 +1,5 @@
-import Hero from "../Hero/Hero"
-
+import Hero from "../components/Hero/Hero"
+import ProductList from "../components/ProductList/ProductList"
 
 const HomePage = () => {
   return (

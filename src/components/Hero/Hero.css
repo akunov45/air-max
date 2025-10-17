@@ -1,0 +1,136 @@
+/* Основной контейнер HERO: центрирование, адаптивность и оформление */
+.hero-container {
+    /* Максимальная ширина баннера (адаптировано под ваш app-container 1320px) */
+    max-width: 1320px; 
+    width: 100%; 
+    
+    /* ЦЕНТРИРОВАНИЕ: центрирует баннер внутри app-container и добавляет отступы */
+    margin: 40px auto; 
+    
+    height: 750px; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* Стили оформления */
+    border-radius: 20px; 
+    overflow: hidden; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding: 40px; 
+}
+
+/* Стилизация текста и кнопки */
+
+.nike {
+    font-size: 74px; 
+    font-weight: 800;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 10px;
+}
+
+.hero-description {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 60px; 
+    left: 40px; 
+    z-index: 2; 
+}
+
+.hero-button {
+    background-color: #4A69E2; 
+    color: white;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Боковая метка */
+.nike-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 180px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Поворот для вертикального размещения */
+    transform: rotate(-90deg) translate(-100%, 0); 
+    transform-origin: top left;
+    padding: 5px 10px;
+    letter-spacing: 0.5px;
+    z-index: 3;
+}
+
+/* Контейнер для маленьких изображений */
+.hero-previews {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    display: flex;
+    flex-direction: column; 
+    gap: 16px; 
+}
+
+.preview-item {
+    width: 160px; 
+    height: 160px; 
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.preview-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+/* Замените старый код .nike-label на этот */
+.nike-label {
+    /* 1. Позиционирование */
+    position: absolute;
+    top: 40px;      /* Отступ сверху, равный padding'у родителя */
+    left: 40px;       /* Отступ слева, равный padding'у родителя */
+    z-index: 3;
+    
+    /* 2. Точка вращения */
+    transform-origin: top left; /* Все трансформации будут от верхнего левого угла */
+
+    /* 3. Сама трансформация (ключевое изменение) */
+    /* Сначала поворачиваем на -90 градусов */
+    /* Затем сдвигаем по новой оси Y (которая теперь смотрит влево) на -100% ВЫСОТЫ элемента */
+    transform: rotate(-90deg) translateY(-100%);
+
+    /* 4. Стилизация для сходства с макетом */
+    background-color: #171717; /* Более подходящий темный цвет */
+    color: white;
+    padding: 14px 24px;   /* Внутренние отступы, чтобы текст не прилипал к краям */
+    border-radius: 12px;  /* Скругление углов */
+    
+    /* 5. Стилизация текста */
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    white-space: nowrap; /* Гарантирует, что текст не перенесется на другую строку */
+}

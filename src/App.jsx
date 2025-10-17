@@ -1,11 +1,16 @@
-import Header  from "./components/Header/Header"
+
+
+import { Categories } from "./components/Catagories/Catagories"
+import Header from "./components/Header/Header"
 import HomePage from "./pages/HomePage"
+
+
 const App = () => {
   return (
     <div>
-      <Header/>
-      <HomePage/>
-      
+      <Header />
+      <HomePage />
+      <Categories />
     </div>
   )
 }
