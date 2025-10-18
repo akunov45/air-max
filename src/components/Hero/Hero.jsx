@@ -38,6 +38,7 @@ const Hero = () => {
           className="w-[160px] h-[160px] rounded-xl border-white"
         />
       </div>
+      
     </div>
   );
 };
