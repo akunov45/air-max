@@ -22,7 +22,7 @@
 
 
 .drop .img {
-  @apply p-[8px] rounded-[28px] bg-[green] relative mb-[16px];
+  @apply p-[8px] rounded-[28px] bg-[#FAFAFA] relative mb-[16px];
 
   span {
     border-radius: 24px 0px 24px 0px;

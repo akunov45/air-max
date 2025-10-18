@@ -1,31 +1,40 @@
 import Button from '../UI/Button'
 import './ProductList.css'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import { products } from '../../api/productsApi'
 
 const ProductList = () => {
+  const [drops, setDrops] = useState([])
+
   useEffect(() => {
-    
-  })
-  return (  
+    setDrops(products)
+  }, [])
+
+  return (
     <div>
       <div className='product-title'>
         <h2>Don’t miss out new drops</h2>
         <Button>
           Shop New Drops
         </Button>
+      </div>
+
+      <div className="drops flex gap-[55px]">
+        {drops.map(drop => (
+          <div className="drop" key={drop.id}>
+            <div className="img">
+              <img src={drop.img} alt="" />
+              <span>{drop.label}</span>
+            </div>
+            <div className="title">
+              <h4>{drop.name}</h4>
+              <button>
+                View product - <span>${drop.price}</span>
+              </button>
+            </div>
           </div>
-        <div className="drops">
-        <div className="drop">
-          <div className="img">
-            <img src="https://www.tradesports.co.uk/cdn/shop/files/GY8424_01.jpg?v=1729251462" alt="" />
-            <span>New</span>
-          </div>
-          <div className="title">
-            <h4>ADIDAS 4DFWD X PARLEY RUNNING SHOES</h4>
-            <button>View product - <span>$125</span></button>
-          </div>
-        </div>
-        </div>
+        ))}
+      </div>
     </div>
   )
 }

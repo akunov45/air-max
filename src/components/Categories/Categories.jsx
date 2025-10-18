@@ -42,7 +42,7 @@ export default function Categories() {
             <img src={s.img} alt={s.title} />
             <h3>{s.title}</h3>
             <button className="open-btn">
-              <img src="/public/image.png" alt="" />
+              <img src="/public/str.png" alt="" />
             </button>
           </div>
         ))}
