@@ -10,33 +10,71 @@
     @apply uppercase;
   }
 
-  button {}
+}
+
+
+
+
+.drop {
+  @apply w-[318px]
+}
+
+
+.drop .img {
+  @apply p-[8px] rounded-[28px]  relative mb-[16px];
+
+  span {
+    border-radius: 24px 0px 24px 0px;
+    @apply absolute top-[8px] bg-[#4A69E2] text-[white] text-[12px] py-[12px] px-[16px];
+  }
+}
+
+
+.drop img {
+  @apply w-full rounded-[28px];
+}
+
+
+
+.title h4 {
+  @apply text-[24px] font-[700] mb-[16px];
+}
+
+
+
+.title button {
+  margin-bottom: 32px;
+  @apply bg-[black] text-[white] w-full py-[15px] rounded-[8px] uppercase;
+  span {
+  @apply text-[orange] font-[700]
+  }
 }
 
 .product {
-  @apply w-[318px];
+  @apply w-[318px]
 }
 
 .product .img {
   @apply p-[8px] rounded-[28px] bg-[green] relative mb-[16px];
-
-  span {
-    border-radius: 24px 0px  24px 0;
-    @apply absolute top-[8px]  bg-[#4A69E2] text-[white] text-[12px] py-[12px] px-[16px];
+    span{
+      border-radius: 24px 0px 24px 0px ;
+    @apply absolute top-[8px] bg-[#4a69e2] text-[white] text-[12px] py-[12px]
+    px-[16px]
+    ;
   }
 }
 
 .product img {
   @apply w-full rounded-[28px];
-}
 
+}
 .info h4 {
   @apply text-[24px] font-[700] mb-[16px];
 }
-
 .info button {
   @apply bg-[black] text-[white] w-full py-[15px] rounded-[8px] uppercase;
   span {
-    @apply text-[orange] font-[700];
+    @apply text-[orange] font-[700]
   }
 }
+
