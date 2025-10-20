@@ -1,6 +1,6 @@
 import Hero from '../components/Hero/Hero'
 import ProductList from '../components/ProductList/ProductList'
-import { getProducts } from "../api/productsApi"
+// import { getProducts } from "../api/productsApi"
 import Categories from '../components/Categories/Categories'
 
 const HomePage = () => {
