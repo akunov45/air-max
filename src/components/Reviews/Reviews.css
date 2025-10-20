@@ -1,0 +1,10 @@
+.r-header {
+  @apply flex justify-between items-center pt-[128px] pb-[48px];
+  h2 {
+    @apply text-[74px] font-[600] uppercase;
+  }
+}
+
+.r-cards {
+  @apply flex;
+}
