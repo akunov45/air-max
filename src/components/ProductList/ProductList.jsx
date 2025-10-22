@@ -9,7 +9,7 @@ const ProductList = () => {
 useEffect(() => {
   const fetchProducts = async () => {
     const data = await getProducts()
-    const updated = data.map(p => ({ ...p, is_new: true })) 
+    const updated = data.map(p => ({ ...p, is_new: true }))
     setProducts(updated || [])
   }
   fetchProducts()
@@ -31,11 +31,11 @@ if(products.length === 0){
         <Button>Shop New Drops</Button>
       </div>
 
-      <div className="drops flex items-center justify-center gap-[16px] flex-wrap">
+      <div className="drops  flex items-center justify-center gap-[16px] flex-wrap">
         {allProducts?.length > 0 ? (
           allProducts.map((item) => (
             <div className="drop rounded-[28px]" key={item.id}>
-              <div className="img">
+              <div className="img bg-[white]">
                 <img src={item.images[0] || '/public/jordan.png'} alt={item.name} />
                 {item.is_new && <span>New</span>}
               </div>
