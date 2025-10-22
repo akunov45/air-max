@@ -2,7 +2,6 @@ import Hero from '../components/Hero/Hero'
 import ProductList from '../components/ProductList/ProductList'
 import ShoeButs from '../components/ShoesButs/ShoeButs'
 import Reviews from '../components/Reviews/Reviews'
-
 const HomePage = () => {
   return (
     <div className='app-container pt-[24px]'>
