@@ -6,21 +6,21 @@ import './ProductList.css'
 const ProductList = () => {
   const [products, setProducts] = useState([])
 
-useEffect(() => {
-  const fetchProducts = async () => {
-    const data = await getProducts()
-    const updated = data.map(p => ({ ...p, is_new: true }))
-    setProducts(updated || [])
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const data = await getProducts()
+      const updated = data.map(p => ({ ...p, is_new: true }))
+      setProducts(updated || [])
+    }
+    fetchProducts()
+  }, [])
+
+
+  if (products.length === 0) {
+    return (
+      <h2>Loading...</h2>
+    )
   }
-  fetchProducts()
-}, [])
-
-
-if(products.length === 0){
-  return (
-    <h2>Loading...</h2>
-  )
-}
 
   const allProducts = [...products,]
 
